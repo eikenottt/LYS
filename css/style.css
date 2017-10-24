@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +9,10 @@ header {
     height: 100px;
     border-bottom: 1px solid black;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-span {
+#light {
     color: yellow;
     text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
 }
@@ -26,8 +28,9 @@ a:link, a:active, a:visited, a:focus {
 
 .dropdown {
     position: absolute;
-    top:10px;
+    top:30px;
     left: 0;
+    width: auto;
     display: none;
     opacity: 0;
     transition: 0.3s;
@@ -48,16 +51,43 @@ a:hover {
 
 ul {
     position: relative;
-    width: 300px;
+    width: 500px;
+}
+
+.hasDropdown {
+    position: relative;
+    height: 40px;
 }
 
 ul li {
     display: inline-block;
+    cursor: pointer;
 }
 
-ul li:hover .dropdown {
+.hasDropdown:hover::before {
+    display: inline-block;
+}
+
+.hasDropdown:hover .dropdown {
     display: block;
     opacity: 1;
+}
+
+
+
+.hasDropdown:before {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 20px;
+    left: 40%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #9c9c9c;
+    background: transparent;
+    width: 0px;
+    height: 0px;
+    z-index: 2;
 }
 
 
