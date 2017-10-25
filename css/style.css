@@ -12,6 +12,18 @@ header {
     font-family: 'Roboto', sans-serif;
 }
 
+main {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background: url("../images/House_1.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
 #light {
     color: yellow;
     text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
