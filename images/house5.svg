@@ -2411,7 +2411,8 @@
                 <rect id="lightsOff-3" data-name="lightsOff" class="cls-101" x="512.04" y="586.98" width="219.28"
                       height="130"/>
             </g>
-            <g id="boiler_room" data-name="boiler room">
+            <a id="boiler_room_link">
+                <g id="boiler_room" data-name="boiler room">
                 <rect class="cls-102" x="756.97" y="757.93" width="274.37" height="143.29"/>
                 <rect class="cls-103" x="771.09" y="757.93" width="247.57" height="130.73"/>
                 <rect class="cls-104" x="799.85" y="877.76" width="14.24" height="5.81"/>
@@ -2503,7 +2504,9 @@
                 <rect id="lightsOff-4" data-name="lightsOff" class="cls-101" x="770.04" y="758.98" width="249.05"
                       height="130"/>
             </g>
-            <g id="living_room" data-name="living room">
+            </a>
+            <a id="living_room_link">
+                <g id="living_room" data-name="living room">
                 <rect class="cls-115" x="278.41" y="586.93" width="219.28" height="130"/>
                 <rect class="cls-97" x="278.41" y="586.93" width="219.28" height="10.15"/>
                 <rect class="cls-44" x="278.41" y="711.65" width="219.28" height="5.28"/>
@@ -2626,7 +2629,9 @@
                 <rect id="lightsOff-5" data-name="lightsOff" class="cls-101" x="278.41" y="586.93" width="219.28"
                       height="130"/>
             </g>
-            <g id="studio">
+            </a>
+            <a id="studio_link">
+                <g id="studio">
                 <rect class="cls-140" x="278.41" y="313.93" width="219.28" height="130"/>
                 <rect class="cls-129" x="337.8" y="419.72" width="3.31" height="7.49"/>
                 <path class="cls-44" d="M351.18,433.36l-11.73-2.65v3.5l13.1,1.47v-.62A1.73,1.73,0,0,0,351.18,433.36Z"/>
@@ -2812,7 +2817,9 @@
                 <rect id="lightsOff-6" data-name="lightsOff" class="cls-101" x="278.41" y="313.93" width="219.28"
                       height="130"/>
             </g>
-            <g id="children_room" data-name="children room">
+            </a>
+            <a id="childeren_room_link">
+                <g id="children_room" data-name="children room">
                 <rect class="cls-141" x="583.75" y="370.3" width="10.97" height="13.75"/>
                 <rect class="cls-21" x="584.92" y="371.77" width="8.63" height="10.82"/>
                 <rect class="cls-155" x="586.96" y="374.33" width="4.54" height="5.69"/>
@@ -3026,7 +3033,9 @@
                 <rect id="lightsOff-7" data-name="lightsOff" class="cls-101" x="513.08" y="313.93" width="219.28"
                       height="130"/>
             </g>
-            <g id="garage">
+            </a>
+            <a id="garage_link">
+                <g id="garage">
                 <rect class="cls-185" x="770.69" y="586.39" width="247.95" height="130.45"/>
                 <rect class="cls-186" x="913.12" y="586.85" width="105.53" height="130.45"/>
                 <rect class="cls-187" x="770.69" y="614.83" width="142.45" height="4.33"/>
@@ -3321,7 +3330,9 @@
                 <rect id="lightsOff-8" data-name="lightsOff" class="cls-101" x="770.04" y="586.98" width="249.05"
                       height="130"/>
             </g>
-            <g id="bedroom">
+            </a>
+            <a id="bedroom_link">
+                <g id="bedroom">
                 <rect class="cls-225" x="278.41" y="450.43" width="219.28" height="130"/>
                 <path class="cls-150"
                       d="M402.85,527.2H325.63a3.28,3.28,0,0,0-3.28,3.28v33.68h83.79V530.48A3.28,3.28,0,0,0,402.85,527.2Z"/>
@@ -3479,7 +3490,9 @@
                 <rect id="lightsOff-9" data-name="lightsOff" class="cls-101" x="278.41" y="450.93" width="219.28"
                       height="130"/>
             </g>
-            <g id="bathroom">
+            </a>
+            <a id="bathroom_lin">
+                <g id="bathroom">
                 <rect class="cls-241" x="512.41" y="450.43" width="219.28" height="130"/>
                 <rect class="cls-242" x="513.59" y="457.42" width="12.16" height="12.16" rx="1.26" ry="1.26"/>
                 <rect class="cls-242" x="526.81" y="457.42" width="12.16" height="12.16" rx="1.26" ry="1.26"/>
@@ -3656,7 +3669,9 @@
                 <rect id="lightsOff-10" data-name="lightsOff" class="cls-101" x="512.41" y="449.93" width="219.28"
                       height="130"/>
             </g>
-            <g id="laundry">
+            </a>
+            <a id="laundry_link">
+                <g id="laundry">
                 <rect class="cls-264" x="770.48" y="450.43" width="195.14" height="130"/>
                 <rect class="cls-21" x="821.25" y="529.63" width="61.19" height="45.67"/>
                 <rect class="cls-265" x="821.25" y="529.63" width="61.19" height="3.76"/>
@@ -3770,6 +3785,18 @@
                 <rect id="lightsOff-11" data-name="lightsOff" class="cls-101" x="770.41" y="449.93" width="194.67"
                       height="130"/>
             </g>
+            </a>
         </g>
     </g>
 </svg>
+        /*
+        #kitchen_link
+        #laundry_link
+        #bedroom_link
+        #bathroom_link
+        #studio_link
+        #boiler_room_link
+        #garage_link
+        #children_room_link
+        #living_room_link
+        */
