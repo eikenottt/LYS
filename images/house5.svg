@@ -1961,7 +1961,8 @@
                 <polygon class="cls-21" points="770.75 576 770.75 594.74 1038.92 594.74 1035.28 576 770.75 576"/>
                 <rect id="grass" class="cls-39" x="0.09" y="737.71" width="1140" height="20.12"/>
             </g>
-            <g id="entrence">
+            <a id="entrence_link">
+                <g id="entrence">
                 <g id="entrence-2" data-name="entrence">
                     <g id="en_lights">
                         <polygon class="cls-40" points="242.5 590.62 207.42 718 277.58 718 242.5 590.62"/>
@@ -1990,7 +1991,10 @@
                 </g>
                 <rect id="lightsOff" class="cls-47" x="125.75" y="579" width="141.33" height="137.48"/>
             </g>
-            <g id="outdoors">
+            </a>
+
+            <a id="outdoor_link">
+                <g id="outdoors">
                 <g id="outdoor">
                     <g id="out_lights">
                         <polygon class="cls-48" points="829.98 416 873.28 258.78 786.67 258.78 829.98 416"/>
@@ -2161,7 +2165,10 @@
                 <polygon id="lightsOff-2" data-name="lightsOff" class="cls-47"
                          points="770.08 419.93 1018.09 419.93 1018.09 264.5 778.59 264 781.75 287.25 780.77 305.94 770.59 316 770.08 419.93"/>
             </g>
-            <g id="kitchen">
+            </a>
+
+            <a id="kitchen_link">
+                <g id="kitchen">
                 <rect class="cls-57" x="512.41" y="586.93" width="219.28" height="130"/>
                 <rect class="cls-58" x="512.41" y="586.93" width="219.28" height="10.15"/>
                 <rect class="cls-32" x="657.1" y="622.33" width="36.47" height="94.6"/>
@@ -2411,6 +2418,7 @@
                 <rect id="lightsOff-3" data-name="lightsOff" class="cls-101" x="512.04" y="586.98" width="219.28"
                       height="130"/>
             </g>
+            </a>
             <a id="boiler_room_link">
                 <g id="boiler_room" data-name="boiler room">
                 <rect class="cls-102" x="756.97" y="757.93" width="274.37" height="143.29"/>
@@ -3789,14 +3797,3 @@
         </g>
     </g>
 </svg>
-        /*
-        #kitchen_link
-        #laundry_link
-        #bedroom_link
-        #bathroom_link
-        #studio_link
-        #boiler_room_link
-        #garage_link
-        #children_room_link
-        #living_room_link
-        */
