@@ -5,28 +5,54 @@
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: deepskyblue;
     width: 100vw;
-    height: 100px;
-    border-bottom: 1px solid black;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+    height: 70vh;
+    z-index: 0;
 }
 
-main {
+#house {
     width: 100vw;
     height: 100vh;
     margin: auto;
-    background: url("../images/House_1.svg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
+    position: absolute;
 }
 
 #light {
     color: yellow;
     text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+}
+
+#switch {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgba(24,26,51, 0.9);
+    opacity: 1;
+    transition: 1s;
+    z-index: 4;
+}
+
+#switch img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+}
+
+.indoorRoom {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 a {
@@ -85,6 +111,9 @@ ul li {
     opacity: 1;
 }
 
+section {
+    background: url("../images/backup_layover.svg");
+}
 
 
 .hasDropdown:before {
@@ -102,6 +131,58 @@ ul li {
     z-index: 2;
 }
 
+.fadeOut {
+    animation: fadeout 1s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.lightsOff {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.lightsOn {
+    opacity: 0 !important;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: saddlebrown;
+    width: 100vw;
+    height: 30vh;
+    z-index: -1;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
 
 
 
