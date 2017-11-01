@@ -39,7 +39,7 @@
                 addLink("#entrence_link", "../entrence.html");
 
                 hover("[id*='lightsOff']");
-                hover("[id*='lightsOff']");
+                hover("[id*='outside']");
             }
             function addRotateTransform(target_id, dur, dir) {
                 var my_element = svgDoc.querySelector(target_id);
@@ -78,6 +78,19 @@
                     });
                     e.addEventListener("mouseleave", function() {
                         e.style.opacity = 0.7;
+                    });
+                });
+            }
+
+            function hoverOutside(target){
+                var my_elements = svgDoc.querySelectorAll(target);
+                var o_lights = svgDoc.querySelector(".outdoor_lights");
+                var day = svgDoc.querySelector("#day");
+                var night = svgDoc.querySelector("#night");
+                my_elements.forEach(e => {
+
+                    e.addEventListener("mouseover", function() {
+                        o_lights.style.opacity = 1;
                     });
                 });
             }
@@ -1964,7 +1977,7 @@
             <a id="entrence_link">
                 <g id="entrence">
                 <g id="entrence-2" data-name="entrence">
-                    <g id="en_lights">
+                    <g id="en_lights" class="outdoor_lights">
                         <polygon class="cls-40" points="242.5 590.62 207.42 718 277.58 718 242.5 590.62"/>
                         <polygon class="cls-41" points="171.2 590.62 136.12 718 206.28 718 171.2 590.62"/>
                     </g>
@@ -1989,14 +2002,13 @@
                     <polygon class="cls-22" points="253.38 695.4 258.5 716.71 260.28 716.71 257.81 695.4 253.38 695.4"/>
                     <path class="cls-46" d="M252,688.45H232.94a1.69,1.69,0,1,0,0,3.37H252a1.69,1.69,0,1,0,0-3.37Z"/>
                 </g>
-                <rect id="lightsOff" class="cls-47" x="125.75" y="579" width="141.33" height="137.48"/>
+                <rect id="outside" class="cls-47" x="125.75" y="579" width="141.33" height="137.48"/>
             </g>
             </a>
-
             <a id="outdoor_link">
                 <g id="outdoors">
                 <g id="outdoor">
-                    <g id="out_lights">
+                    <g id="out_lights" class="outdoor_lights">
                         <polygon class="cls-48" points="829.98 416 873.28 258.78 786.67 258.78 829.98 416"/>
                         <polygon class="cls-49" points="917.98 416 961.28 258.78 874.67 258.78 917.98 416"/>
                     </g>
@@ -2162,7 +2174,7 @@
                         <path class="cls-21" d="M972.28,318.36a5,5,0,1,0-5.14,4.85A5,5,0,0,0,972.28,318.36Z"/>
                     </g>
                 </g>
-                <polygon id="lightsOff-2" data-name="lightsOff" class="cls-47"
+                <polygon id="outside-1" data-name="lightsOff" class="cls-47"
                          points="770.08 419.93 1018.09 419.93 1018.09 264.5 778.59 264 781.75 287.25 780.77 305.94 770.59 316 770.08 419.93"/>
             </g>
             </a>
@@ -2826,7 +2838,7 @@
                       height="130"/>
             </g>
             </a>
-            <a id="childeren_room_link">
+            <a id="children_room_link">
                 <g id="children_room" data-name="children room">
                 <rect class="cls-141" x="583.75" y="370.3" width="10.97" height="13.75"/>
                 <rect class="cls-21" x="584.92" y="371.77" width="8.63" height="10.82"/>
@@ -3499,7 +3511,7 @@
                       height="130"/>
             </g>
             </a>
-            <a id="bathroom_lin">
+            <a id="bathroom_link">
                 <g id="bathroom">
                 <rect class="cls-241" x="512.41" y="450.43" width="219.28" height="130"/>
                 <rect class="cls-242" x="513.59" y="457.42" width="12.16" height="12.16" rx="1.26" ry="1.26"/>
