@@ -86,16 +86,14 @@ function hoverOutside(target){
         e_lights.style.opacity = 0;
         o_lights.style.opacity = 0;
         e.addEventListener("mouseover", function() {
-            if(hasSibling(e, "out_lights"))
-                o_lights.style.opacity = 1;
-            if(hasSibling(e, "en_lights"))
-                e_lights.style.opacity = 1;
+            e.style.cursor = "pointer";
+            console.log(e);
+            o_lights.style.opacity = 1;
+            e_lights.style.opacity = 1;
         });
         e.addEventListener("mouseleave", function() {
-            if(hasSibling(e, "out_lights"))
-                o_lights.style.opacity = 0;
-            if(hasSibling(e, "en_lights"))
-                e_lights.style.opacity = 0;
+            o_lights.style.opacity = 0;
+            e_lights.style.opacity = 0;
         });
     });
 }
@@ -103,19 +101,4 @@ function hoverOutside(target){
 function addLink(target_id, link_address) {
     var target_element = svgDoc.querySelector(target_id);
     target_element.setAttribute("href", link_address);
-}
-
-function hasSibling(target, siblingID) {
-    var siblingExists = false;
-    var sibling = target.parentNode.firstChild;
-    var id = "";
-    for (; sibling; sibling = sibling.nextSibling) {
-        console.log(sibling);
-        id = (sibling.firstChild === null) ? console.log("Null!!!") : console.log(sibling.firstChild);
-        //console.log(sibling.firstChild);
-        if (sibling.nodeType !== 1 || sibling === target) continue;
-        if(id === siblingID)
-            siblingExists = true;
-    }
-    return siblingExists;
 }

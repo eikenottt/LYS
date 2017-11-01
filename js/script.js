@@ -11,9 +11,4 @@ window.onload = function() {
         overlay.classList.add("fadeOut");
         setTimeout(function (){overlay.remove()}, 1000);
     }
-
-    function hover() {
-
-    }
-
 };
