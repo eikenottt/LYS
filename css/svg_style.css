@@ -1,0 +1,7 @@
+#night {
+    transition: 0.3s;
+}
+
+#night:hover {
+    opacity: 0;
+}
