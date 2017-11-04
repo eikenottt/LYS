@@ -198,7 +198,9 @@ section {
 }
 #indexknapp{
     position: relative;
+    display: inline-block;
     z-index: 2;
+    float: left;
 }
 #overskrift{
     position: absolute;
