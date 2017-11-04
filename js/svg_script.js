@@ -55,9 +55,8 @@ function hoverOutside(target){
     var my_elements = svgDoc.querySelectorAll(target);
     var o_lights = svgDoc.querySelector("#out_lights");
     var e_lights = svgDoc.querySelector("#en_lights");
-    var day = svgDoc.querySelector("#day");
-    var night = svgDoc.querySelector("#night");
     my_elements.forEach(e => {
+        console.log(e);
         e_lights.style.opacity = 0;
         o_lights.style.opacity = 0;
         e.addEventListener("mouseover", function() {
