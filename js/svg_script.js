@@ -20,49 +20,24 @@ function init(evt)
 
     //addRotateTransform('#windmill', 3, 1);
 
-    addLink("#kitchen_link", "../kitchen.html");
-    addLink("#laundry_link", "../laundry.html");
-    addLink("#bedroom_link", "../bedroom.html");
-    addLink("#bathroom_link", "../bathroom.html");
-    addLink("#studio_link", "../studio.html");
-    addLink("#boiler_room_link", "../boiler.html");
-    addLink("#garage_link", "../garage.html");
-    addLink("#children_room_link", "../children.html");
-    addLink("#living_room_link", "../living.html");
-    addLink("#outdoor_link", "../outdoor.html");
-    addLink("#entrence_link", "../entrence.html");
+    addLink("#kitchen_link", "../resources/kitchen.html");
+    addLink("#laundry_link", "../resources/laundry.html");
+    addLink("#bedroom_link", "../resources/bedroom.html");
+    addLink("#bathroom_link", "../resources/bathroom.html");
+    addLink("#studio_link", "../resources/homeoffice.html");
+    addLink("#boiler_room_link", "../resources/basement.html");
+    addLink("#garage_link", "../resources/garage.html");
+    addLink("#children_room_link", "../resources/bedroom.html");
+    addLink("#living_room_link", "../resources/livingroom.html");
+    addLink("#outdoor_link", "../resources/outdoor.html");
+    addLink("#entrence_link", "../resources/entrence.html");
 
     hover("[id*='lightsOff']");
     hoverOutside("[id*='outside']");
 }
-function addRotateTransform(target_id, dur, dir) {
-    var my_element = svgDoc.querySelector(target_id);
-    var a = svgDoc.createElementNS(svgNS, "animateTransform");
-    var bb = my_element.getBBox();
-    var cx = bb.x + bb.width/2;
-    var cy = bb.y + bb.height/2;
-
-    a.setAttributeNS(null, "attributeName", "transform");
-
-    a.setAttributeNS(null, "attributeType", "XML");
-
-    a.setAttributeNS(null, "type", "rotate");
-
-    a.setAttributeNS(null, "dur", dur + "s");
-
-    a.setAttributeNS(null, "repeatCount", "indefinite");
-
-    a.setAttributeNS(null, "from", "0 "+cx+" "+cy);
-
-    a.setAttributeNS(null, "to", 360*dir+" "+cx+" "+cy);
-
-    my_element.appendChild(a);
-
-    a.beginElement();
-
-}
 
 function hover(target) {
+    console.log("Mobile");
     var my_elements = svgDoc.querySelectorAll(target);
     my_elements.forEach(e => {
         e.style.transition = "0.5s";
