@@ -157,7 +157,7 @@ section {
     opacity: 0 !important;
 }
 
-#stueinfo{
+#rominfo{
     font-family: 'Saira Extra Condensed', sans-serif;
     font-size: 17px;
     position: absolute;
@@ -173,6 +173,8 @@ section {
 #roompic{
     width: 100vw;
     height: 70vh;
+    position: relative;
+    z-index: 1;
 
 }
 footer{
