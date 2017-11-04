@@ -25,7 +25,7 @@ header {
     left: 0;
 }
 
-#mobile_house {
+#mobile {
     position: relative;
     z-index: 2;
 }
@@ -173,6 +173,8 @@ section {
 #roompic{
     width: 100vw;
     height: 70vh;
+    position: relative;
+    z-index: 1;
 
 }
 footer{
