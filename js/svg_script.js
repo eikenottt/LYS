@@ -25,7 +25,7 @@ function init(evt)
     addLink("#bedroom_link", "../resources/bedroom.html");
     addLink("#bathroom_link", "../resources/bathroom.html");
     addLink("#studio_link", "../resources/homeoffice.html");
-    addLink("#boiler_room_link", "../resources/basement.html");
+    addLink("#boiler_room_link", "../resources/contact.html");
     addLink("#garage_link", "../resources/garage.html");
     addLink("#children_room_link", "../resources/bedroom.html");
     addLink("#living_room_link", "../resources/livingroom.html");
