@@ -165,6 +165,7 @@ section {
     width: 30vw;
     margin-left: 52vw;
     margin-top: 10px;
+    padding-bottom: 10px;
 
 }
 #info{
@@ -177,9 +178,7 @@ section {
     z-index: 1;
 
 }
-footer{
-    border-top: solid;
-}
+
 #liste{
     font-family: 'Saira Extra Condensed', sans-serif;
     margin-top: 20px;
@@ -195,6 +194,11 @@ footer{
 #logo{
     width: 15vw;
     padding-top: 10px;
+
+}
+#indexknapp{
+    position: relative;
+    z-index: 2;
 }
 #overskrift{
     position: absolute;
@@ -212,6 +216,8 @@ footer {
     width: 100vw;
     height: 30vh;
     z-index: -1;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 @keyframes fadeout {
