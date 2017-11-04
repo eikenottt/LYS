@@ -30,7 +30,7 @@ function init(evt)
     addLink("#children_room_link", "../resources/bedroom.html");
     addLink("#living_room_link", "../resources/livingroom.html");
     addLink("#outdoor_link", "../resources/outdoor.html");
-    addLink("#entrence_link", "../resources/entrence.html");
+    addLink("#entrence_link", "../resources/outdoor.html");
 
     hover("[id*='lightsOff']");
     hoverOutside("[id*='outside']");
