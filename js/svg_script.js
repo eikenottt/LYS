@@ -1,3 +1,4 @@
+//This website was created by candidate nr: 107, 106 and 114
 // Gathers the SVG syntax from w3.org
 var svgNS = "http://www.w3.org/2000/svg";
 

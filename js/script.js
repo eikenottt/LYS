@@ -1,4 +1,4 @@
-
+//This website was created by candidate nr: 107, 106 and 114
 // Controls the light switch animations
 window.onload = function() {
     const lSwitch = document.querySelector("img");
