@@ -58,7 +58,7 @@ function hoverOutside(target){
     my_elements.forEach(e => {
         console.log(e);
         e_lights.style.opacity = 0;
-        o_lights.style.opacity = 0;K
+        o_lights.style.opacity = 0;
         e.addEventListener("mouseover", function() {
             e.style.cursor = "pointer";
             console.log(e);

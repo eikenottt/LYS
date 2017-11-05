@@ -38,7 +38,7 @@ header {
 #switch {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     background: rgba(24,26,51, 0.9);
     opacity: 1;
     transition: 1s;
