@@ -1,3 +1,5 @@
+
+// Controls the light switch animations
 window.onload = function() {
     const lSwitch = document.querySelector("img");
     const overlay = document.querySelector("#switch");
