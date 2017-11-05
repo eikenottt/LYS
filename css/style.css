@@ -7,7 +7,7 @@
 }
 
 /***
-Design for header, candnr:
+Design for header
  */
 header {
     position: fixed;
@@ -18,7 +18,7 @@ header {
     height: 70vh;
     z-index: 0;
 }
-/* Code for SVG house design candnr:*/
+/* Code for SVG house design*/
 #house {
     width: 100vw;
     height: 100vh;
@@ -27,17 +27,17 @@ header {
     top: 0;
     left: 0;
 }
-/*Positioning images mobile view candnr: */
+/*Positioning images mobile view*/
 #mobile {
     position: relative;
     z-index: 2;
 }
-/* Design for outside lighting on roof and entrance candnr:*/
+/* Design for outside lighting on roof and entrance*/
 #light {
     color: yellow;
     text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
 }
-/* Code for the light switch at start candnr:*/
+/* Code for the light switch at start*/
 #switch {
     width: 100vw;
     height: 100vh;
@@ -74,7 +74,7 @@ a:hover {
     background: #606060 !important;
     color: #d4d4d4;
 }
-/* Code for lightswitch Candnr:*/
+/* Code for lightswitch*/
 .fadeOut {
     animation: fadeout 1s;
     animation-fill-mode: forwards;
@@ -88,7 +88,7 @@ a:hover {
 .lightsOn {
     opacity: 0 !important;
 }
-/* Code for styling of the information on each page candnr:*/
+/* Code for styling of the information on each page*/
 #rominfo{
     font-family: 'Saira Extra Condensed', sans-serif;
     font-size: 17px;
@@ -102,7 +102,7 @@ a:hover {
 #info{
     margin-bottom: 0;
 }
-/* Code for style of image on room page candnr:*/
+/* Code for style of image on room page*/
 #roompic{
     width: 100vw;
     height: 60vh;
@@ -110,7 +110,7 @@ a:hover {
     z-index: 1;
 
 }
-/* Info list candnr:*/
+/* Info list*/
 #liste{
     font-family: 'Saira Extra Condensed', sans-serif;
     margin-top: 20px;
@@ -124,20 +124,20 @@ a:hover {
     text-decoration: none;
     list-style-type: circle;
 }
-/* Code for logo candnr:*/
+/* Code for logo*/
 #logo{
     width: 15vw;
     padding-top: 10px;
 
 }
-/* Button for returning to previous page candnr:*/
+/* Button for returning to previous page*/
 #indexknapp{
     position: relative;
     display: inline-block;
     z-index: 2;
     float: left;
 }
-/* Code for heading on info pages candnr:*/
+/* Code for heading on info pages*/
 #overskrift{
     position: absolute;
     color: white;
@@ -146,7 +146,7 @@ a:hover {
     margin-left: 45vw;
 
 }
-/* Footer style candnr:*/
+/* Footer style*/
 footer {
     position: fixed;
     bottom: 0;
@@ -158,7 +158,7 @@ footer {
     overflow: scroll;
     overflow-x: hidden;
 }
-/* Defines the fadeout animation candnr:*/
+/* Defines the fadeout animation*/
 @keyframes fadeout {
     from {
         opacity: 1;
